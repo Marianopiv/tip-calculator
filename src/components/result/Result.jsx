@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 
-const Result = ({ calculus,people}) => {
-  const reset = () => {
-    window.location.reload();
-  };
+const Result = ({ calculus,people,reset}) => {
 
   useEffect(() => {
 
