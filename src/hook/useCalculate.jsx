@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
 const useCalculate = () => {
+
   const [state, setState] = useState({
     bill: 0,
     percentage: 0,
@@ -54,12 +55,6 @@ const useCalculate = () => {
   };
 
   const reset = () => {
-    /* setState({
-      bill: 0,
-      percentage: 0,
-      people: 0,
-      total: 0,
-    }); */
 
     const copy = { ...state };
     Object.keys(copy).forEach((key) => {
@@ -67,7 +62,6 @@ const useCalculate = () => {
     });
 
     setState(copy)
-    /*  setState(result) */
 
     formulario.current.reset();
   };
