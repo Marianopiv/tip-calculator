@@ -38,6 +38,10 @@ const useCalculate = () => {
   };
 
   const handleBlur = (e, text) => {
+    console.log(e)
+    //name=bill en este caso
+    //value=473924
+    {bill:473924}
     const { name, value } = e.target;
     if (!value || value === 0) {
       setErrors({ ...errors, [name]: text });
