@@ -5,7 +5,7 @@ import Home from './home/Home'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App h-screen md:bg-cyan-950">
       <Home/>
     </div>
   )
